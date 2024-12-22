@@ -42,6 +42,7 @@ class _SpinHistoryViewState extends State<SpinHistoryView> {
                   fontStyle: FontStyle.italic,
                 ),
                 textAlign: TextAlign.center,
+                softWrap: true,
               ),
             );
           } else {
@@ -83,7 +84,7 @@ class _SpinHistoryViewState extends State<SpinHistoryView> {
                               SizedBox(
                                 width: double.infinity,
                                 child: Text(
-                                  'Di-spin pada: ${history.fields.spinTime.toLocal().toString().split(' ')[0]}',
+                                  'Spinned on: ${history.fields.spinTime.toLocal().toString().split(' ')[0]}',
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
                                     fontSize: 14.0,

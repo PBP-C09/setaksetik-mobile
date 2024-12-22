@@ -229,10 +229,6 @@ class _ManageOwnershipPageState extends State<ManageOwnershipPage> {
                                           "Ownership revoked successfully",
                                           style: TextStyle(color: Color(0xFFF5F5DC)),
                                         ),
-                                        behavior: SnackBarBehavior.floating,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(10),
-                                        ),
                                       ),
                                     );
                                 } else {
