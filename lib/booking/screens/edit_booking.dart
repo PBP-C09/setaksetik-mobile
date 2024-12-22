@@ -42,12 +42,12 @@ class _EditBookingPageState extends State<EditBookingPage> {
           ..showSnackBar(
             SnackBar(
                 backgroundColor: Color(0xFF3E2723),
-                content:
-                    Text(response['message'])),
+                content: Text(response['message'])),
           );
-        // Replace the current screen with BookingListPage
-        Navigator.pushReplacement(
-          context,
+        
+        
+        Navigator.of(context).pop();
+        Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const BookingListPage()),
         );
       } else {
